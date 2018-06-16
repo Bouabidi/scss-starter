@@ -1,0 +1,82 @@
+// Colors
+
+$black: #000 !default;
+$black-lighten: lighten($black, 10%);
+
+$blue: #00f !default;
+$blue-lighten: lighten($blue, 10%);
+
+$red: #f00 !default;
+$red-darken: darken($red, 10%);
+
+$white: #fff !default;
+
+$gray: #808080 !default;
+$gray-lighten: lighten($gray, 10%);
+$gray-lighten-20: lighten($gray, 20%);
+$gray-lighten-30: lighten($gray, 30%);
+$gray-lighten-40: lighten($gray, 40%);
+
+$gray-darken: darken($gray, 10%);
+$gray-darken-20: darken($gray, 20%);
+$gray-darken-30: darken($gray, 30%);
+$gray-darken-40: darken($gray, 40%);
+
+$yellow: #f5a623 !default;
+// Social colors
+$twitter: #1da1f2 !default;
+$facebook: #4267b2 !default;
+$telegram: #179cde !default;
+
+$body-color: #212529 !default;
+$text-color: $black !default;
+$body-bg: $white !default;
+$link-color: $blue !default;
+$link-decoration: none !default;
+$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-decoration: underline !default;
+$table-caption-color: #6c757d !default;
+
+$colors: (
+  text: (
+    base: $text-color
+  ),
+  black: (
+    base: $black,
+    lighten: $black-lighten,
+  ),
+  white: (
+    base: $white
+  ),
+  blue: (
+    base: $blue,
+    lighten: $blue-lighten,
+  ),
+  yellow: (
+    base: $yellow
+  ),
+  gray: (
+    base: $gray,
+    light: $gray-lighten,
+    light-20: $gray-lighten-20,
+    light-30: $gray-lighten-30,
+    light-40: $gray-lighten-30,
+    darken: $gray-darken,
+    darken-20: $gray-darken-20,
+    darken-30: $gray-darken-30,
+    darken-40: $gray-darken-30,
+  ),
+  twitter: (
+    base: $twitter
+  ),
+  telegram: (
+    base: $telegram
+  ),
+  facebook: (
+    base: $facebook
+  ),
+  red: (
+    base: $red,
+    darken: $red-darken,
+  ),
+);

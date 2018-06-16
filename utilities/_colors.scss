@@ -1,0 +1,29 @@
+// #Colors
+// Loop through color map to create helpers for foreground and backgrounds
+// Helper classes =
+// fg = color
+// bg = background
+// each color in map has fg and bg helpers for each variant
+// ex. - .signature--fg-xdark
+
+@each $items, $color in $colors {
+  .#{$items}--fg {
+    color: map-get($color, base) !important;
+
+    @each $item, $val in $color {
+      &-#{$item} {
+        color: $val !important;
+      }
+    }
+  }
+
+  .#{$items}--bg {
+    background: map-get($color, base) !important;
+
+    @each $item, $val in $color {
+      &-#{$item} {
+        background: $val !important;
+      }
+    }
+  }
+}
